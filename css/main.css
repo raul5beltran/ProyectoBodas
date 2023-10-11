@@ -303,13 +303,13 @@ a {
     flex-direction: column;
     justify-content: space-around;
     padding: 10px;
+    align-items: center;
 }
 
 .m-gallerySection__layout{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 16px;
-    max-width: 1200px;
     margin-top: 24px;
 }
 
