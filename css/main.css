@@ -1,0 +1,515 @@
+:root {
+    --mainColor: #3d5545;
+    --mainBackground: #FCF9F4;
+}
+
+html {
+    font-size: 1px;
+    background-color: #fcf9f4;
+    scroll-behavior: smooth;
+}
+
+:where(*) {
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+}
+:where(img){
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+body {
+    font-size: 16rem;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.a-button{
+    padding: 16px 24px;
+    border-radius: 4px;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(14rem, 3vw, 18rem);
+}
+.a-button.-primary{
+    background-color: var(--mainColor);
+    color: white;
+}
+
+/* || HEADER  ----------------------------------------------------------------*/
+.o-mainHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    background-color: #fcf9f4;
+    box-shadow: 0px 14.2579px 28.5158px rgba(0, 0, 0, 0.05);
+    padding: 25rem 64rem;
+    z-index: 2;
+}
+
+/* |> LEFT SIDE ---------------------------------------------------------------*/
+.m-headerLogo__container{
+    display: flex;
+    flex-direction: row;
+    gap: 16rem;
+    align-items: center;
+    justify-content: center;
+}
+.m-headerLogoContainer__img{
+    display: flex;
+    width: 64rem;
+}
+.m-headerLogoContainer__name{
+    font-family: 'Abhaya Libre';
+    font-weight: 700;
+    font-size: 24rem;
+    color: var(--mainColor);
+}
+
+/* |> RIGHT SIDE -------------------------------------------------------------*/
+.m-headerLink__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32rem;
+
+    list-style: none;
+}
+.a-headerLink__text{
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 16rem;
+    color: var(--mainColor);
+}
+.m-headerLink__item {
+    text-decoration: none;
+    cursor: pointer;
+}
+.m-headerLink__item:last-child {
+    padding: 8px 16px;
+    background-color: var(--mainColor);
+    border-radius: 4px;
+    color: white;
+}
+.m-headerLink__item:last-child .a-headerLink__text{
+    color: var(--mainBackground);
+}
+
+.m-headerButton {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 32rem;
+    height: 32rem;
+    gap: 4rem;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.o-heroSection{
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 114rem);
+}
+.m-heroSection__info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24rem;
+}
+.a-heroTitle{
+    font-family: 'Petit Formal Script';
+    font-size: clamp(32rem, 5vw, 64rem);
+    text-align: center;
+    color: var(--mainColor);
+    margin: 0;
+}
+.m-heroSection__image{
+    flex: 1;
+}
+.m-heroSection__image img{
+    object-fit: cover;
+    object-position: 70% center;
+}
+.m-countDown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-countDown__list{
+    display: flex;
+    flex-direction: row;
+    gap: 64rem;
+    margin: 0;
+    padding: 0 16rem;
+}
+.m-countDown__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+}
+.a-countDown__label{
+    font-family: 'EB Garamond';
+    font-weight: 400;
+    font-size: clamp(14rem, 5vw, 24rem);
+    color: var(--mainColor);
+}
+.a-countDown__number{
+    font-family: 'Fira Sans';
+    font-weight: 900;
+    font-size: clamp(24rem, 5vw, 64rem);
+    color: var(--mainColor);
+}
+/* || SECTION ----------------------------------------------------------------*/
+.o-sectionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 64px;
+}
+/* |> WELCOME SECTION '-------------------------------------------------------*/
+.o-welcomeSection{
+    padding: 72rem 0;
+    background-color: var(--mainColor);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.o-welcomeSection span{
+    color: var(--mainBackground);
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 600rem;
+}
+
+/* |> INFO SECTION -----------------------------------------------------------*/
+.o-infoSection{
+    display: flex;
+    flex-direction: column;
+    gap: 64rem;
+}
+.m-infoSection__layout{
+    display: flex;
+    flex-direction: row;
+    gap: 40rem;
+}
+.m-infoSection__layout:nth-child(even){
+    flex-direction: row-reverse;
+}
+.m-infoSection__content{
+    max-width: 540rem;
+    margin-top: 16rem;
+}
+.m-infoSectionContent__text{
+    max-width: 600rem;
+    color: #3D5545;
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 32px */
+}
+.a-infoHeader__subtitle{
+    color: var(--mainColor);
+    font-family: Fira Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.a-infoHeader__title{
+    color: var(--mainColor);
+    font-family: EB Garamond;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.m-infoSection__image{
+    display: flex;
+    flex-direction: column;
+}
+.m-infoSection__image{
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+}
+#vueltaRoca::after{
+    content: "Vuelta a Rocafor";
+    background-color: var(--mainColor);
+    padding: 8rem 16rem;
+}
+
+/* |> WELCOME SECTION '-------------------------------------------------------*/
+.o-hotelSection{
+    padding: 72rem 0;
+    background-color: #ECECE7;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.o-welcomeSection span{
+    color: var(--mainBackground);
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 24rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 600rem;
+}
+
+.o-formSection{
+    padding: 32rem;
+    border-radius: 15rem;
+    overflow: none;
+    border: 2px solid var(--mainColor);
+}
+
+
+/* GALLERY SECTION */
+
+.o-gallerySection {
+    background-color: var(--mainBackground);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.m-gallerySection__layout{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    max-width: 1200px;
+    margin-top: 24px;
+}
+
+.m-gallerySection__layout img {
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+#lightboxImg {
+    max-width: 80%;
+    max-height: 60%;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 160px;
+    right: 90px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+
+
+
+/*LOVE STORY SECTION*/
+.o-loveStorySection {
+    padding: 72px 0;
+    background-color: var(--mainColor);
+    color: var(--mainBackground);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-loveStory__layout {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
+.m-loveStory__content {
+    max-width: 540px;
+}
+
+.m-loveStoryContent__header {
+    margin-bottom: 16px;
+}
+
+.m-loveStoryContent__text {
+    font-family: Fira Sans;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.m-loveStory__image img {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+
+/* || FOOTER -----------------------------------------------------------------*/
+.o-mainFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 72rem;
+    padding: 16rem 0;
+    background: #fcf9f4;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+}
+.a-mainFooter__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    color: #1c2922;
+    opacity: 0.5;
+}
+
+@media (max-width: 720px) {
+    /* || NAVEGADOR RESPONSIVE -----------------------------------------------*/
+    .o-mainHeader{
+        padding: 24rem;
+    }
+    .m-headerNav {
+        position: fixed;
+        inset: 0 0 0 30%;
+        background-color: var(--mainColor);
+        transform: translateX(100%);
+        transition: transform ease 0.5s;
+    }
+    .m-headerNav[data-visible="true"] {
+        transform: translateX(0%);
+    }
+    .m-headerLink__container {
+        padding: 32rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .m-headerButton span {
+        background-color: var(--mainBackground);
+        border-radius: 10px;
+        height: 3px;
+        transform-origin: center center;
+        transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
+    .m-headerButton[aria-expanded="false"] span{
+        background-color: var(--mainColor);
+    }
+    .a-headerLink__text{
+        color: var(--mainBackground);
+    }
+
+    .a-headerButton__line:nth-of-type(1) {
+        width: 50%;
+    }
+
+    .a-headerButton__line:nth-of-type(2) {
+        width: 100%;
+    }
+
+    .a-headerButton__line:nth-of-type(3) {
+        width: 75%;
+    }
+
+    .m-headerButton[aria-expanded="true"] span:nth-of-type(1) {
+        width: 80%;
+        transform: rotatez(45deg);
+        position: absolute;
+    }
+    .m-headerButton[aria-expanded="true"] span:nth-of-type(2) {
+        width: 0%;
+    }
+    .m-headerButton[aria-expanded="true"] span:nth-of-type(3) {
+        width: 80%;
+        transform: rotatez(-45deg);
+        position: absolute;
+    }
+
+    .o-heroSection{
+        flex-direction: column;
+    }
+    .m-heroSection__info{
+        gap: 48rem;
+        padding: 32rem;
+
+    }
+    .m-countDown__list{
+        flex-wrap: wrap;
+        gap: 0;
+        row-gap: 16rem;
+        column-gap: 32rem;
+        justify-content: center;
+    }
+    .m-countDown__item:nth-child(1){
+        width: 100%;
+
+    }
+    .m-countDown__item:nth-child(1) .a-countDown__number{
+        font-size: 64rem;
+    }
+    .m-infoSection__layout{
+        flex-direction: column-reverse !important;
+        gap: 32rem;
+        padding: 16rem;
+    }
+    .m-infoSection__image{
+        flex-direction: column;
+    }
+    iframe{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <!-- Fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=EB+Garamond:wght@400;500;700&family=Fira+Sans:wght@400;500;900&family=Petit+Formal+Script&display=swap"
+            rel="stylesheet"
+        />
+
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="/js/main.js"></script>
+        <title>Boda María y Pepe</title>
+    </head>
+    <body>
+        <header class="o-mainHeader">
+            <a class="m-headerLogo__container" href="#inicio">
+                <div class="m-headerLogoContainer__img">
+                    <img src="/src/images/logo-color.png" alt="" />
+                </div>
+                <div class="m-headerLogoContainer__name">Boda María y Pepe</div>
+            </a>
+
+            <div class="m-headerButton js-headerButton" aria-expanded="false">
+                <span class="a-headerButton__line"></span>
+                <span class="a-headerButton__line"></span>
+                <span class="a-headerButton__line"></span>
+            </div>
+
+            <nav class="m-headerNav js-headerNav" data-visible="false">
+                <ul class="m-headerLink__container">
+                    <li class="m-headerLink__item">
+                        <a href="#inicio">
+                            <span class="a-headerLink__text">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="m-headerLink__item">
+                        <a href="#informacion">
+                            <span class="a-headerLink__text">Información</span>
+                        </a>
+                    </li>
+                    <li class="m-headerLink__item">
+                        <a href="#teAyudamos">
+                            <span class="a-headerLink__text">
+                                Te ayudamos con el hotel
+                            </span>
+                        </a>
+                    </li>
+                    <li class="m-headerLink__item">
+                        <a href="#confirmarAsistencia">
+                            <span class="a-headerLink__text">
+                                Confirmar asistencia
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="o-heroSection" id="inicio">
+                <div class="m-heroSection__info">
+                    <h1 class="a-heroTitle">
+                        Boda de
+                        <br />
+                        Pepe y María
+                    </h1>
+                    <div class="m-countDown">
+                        <ul class="m-countDown__list">
+                            <li class="m-countDown__item">
+                                <span class="a-countDown__label">Días</span>
+                                <span
+                                    class="a-countDown__number"
+                                    id="days"
+                                ></span>
+                            </li>
+                            <li class="m-countDown__item">
+                                <span class="a-countDown__label">Horas</span>
+                                <span
+                                    class="a-countDown__number"
+                                    id="hours"
+                                ></span>
+                            </li>
+                            <li class="m-countDown__item">
+                                <span class="a-countDown__label">Minutos</span>
+                                <span
+                                    class="a-countDown__number"
+                                    id="minutes"
+                                ></span>
+                            </li>
+                            <li class="m-countDown__item">
+                                <span class="a-countDown__label">Segundos</span>
+                                <span
+                                    class="a-countDown__number"
+                                    id="seconds"
+                                ></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#confirmarAsistencia" class="a-button -primary">Confirmar asistencia</a>
+                </div>
+                <div class="m-heroSection__image">
+                    <img src="/src/images/hero-section.png" alt="" />
+                </div>
+            </div>
+
+            <div class="o-sectionContainer">
+                <div class="o-welcomeSection">
+                    <span>
+                        Se acerca nuestra boda y estamos muy ilusionados de
+                        poder compartir un día tan especial con todos vosotros.
+                    </span>
+                </div>
+
+                <div class="o-infoSection" id="informacion">
+                    <div class="m-infoSection__layout">
+                        <div class="m-infoSection__image">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5551.366485312569!2d-0.38061529356169604!3d39.47354399225816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f5c2d655555%3A0x8e6f07c154a09bd6!2sPlaza%20de%20la%20Reina!5e0!3m2!1ses!2ses!4v1697042890660!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        </div>
+                        <div class="m-infoSection__content">
+                            <div class="m-infoSectionContent__header">
+                                <span class="a-infoHeader__subtitle">
+                                    ceremonia iglesia y hora
+                                </span>
+                                <h2 class="a-infoHeader__title">
+                                    NOMBRE IGLESIA + HORA
+                                </h2>
+                            </div>
+                            <div class="m-infoSectionContent__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Ut et massa mi. Aliquam in
+                                    hendrerit urna. Pellentesque sit amet sapien
+                                    fringilla, mattis ligula consectetur,
+                                    ultrices mauris. Maecenas vitae mattis
+                                    tellus. Nullam quis imperdiet augue.
+                                    Vestibulum auctor ornare leo. Non suscipit
+                                    magna interdum eu. Curabitur pellentesque
+                                    nibh nibh, at maximus ante fermentum sit
+                                    amet. Pellentesque commodo lacus at sodales
+                                    sodales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-infoSection__layout">
+                        <div class="m-infoSection__image">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5551.366485312569!2d-0.38061529356169604!3d39.47354399225816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f5c2d655555%3A0x8e6f07c154a09bd6!2sPlaza%20de%20la%20Reina!5e0!3m2!1ses!2ses!4v1697042890660!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        </div>
+                        <div class="m-infoSection__content">
+                            <div class="m-infoSectionContent__header">
+                                <span class="a-infoHeader__subtitle">
+                                    masía y horario
+                                </span>
+                                <h2 class="a-infoHeader__title">
+                                    LUGAR CONVITE
+                                </h2>
+                            </div>
+                            <div class="m-infoSectionContent__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Ut et massa mi. Aliquam in
+                                    hendrerit urna. Pellentesque sit amet sapien
+                                    fringilla, mattis ligula consectetur,
+                                    ultrices mauris. Maecenas vitae mattis
+                                    tellus. Nullam quis imperdiet augue.
+                                    Vestibulum auctor ornare leo. Non suscipit
+                                    magna interdum eu. Curabitur pellentesque
+                                    nibh nibh, at maximus ante fermentum sit
+                                    amet. Pellentesque commodo lacus at sodales
+                                    sodales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-infoSection__layout">
+                        <div class="m-infoSection__image">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5551.366485312569!2d-0.38061529356169604!3d39.47354399225816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f5c2d655555%3A0x8e6f07c154a09bd6!2sPlaza%20de%20la%20Reina!5e0!3m2!1ses!2ses!4v1697042890660!5m2!1ses!2ses" width="298" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5551.366485312569!2d-0.38061529356169604!3d39.47354399225816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f5c2d655555%3A0x8e6f07c154a09bd6!2sPlaza%20de%20la%20Reina!5e0!3m2!1ses!2ses!4v1697042890660!5m2!1ses!2ses" width="298" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        </div>
+                        <div class="m-infoSection__content">
+                            <div class="m-infoSectionContent__header">
+                                <span class="a-infoHeader__subtitle">
+                                    masía y horario
+                                </span>
+                                <h2 class="a-infoHeader__title">
+                                    Trayectos
+                                </h2>
+                            </div>
+                            <div class="m-infoSectionContent__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Ut et massa mi. Aliquam in
+                                    hendrerit urna. Pellentesque sit amet sapien
+                                    fringilla, mattis ligula consectetur,
+                                    ultrices mauris. Maecenas vitae mattis
+                                    tellus. Nullam quis imperdiet augue.
+                                    Vestibulum auctor ornare leo. Non suscipit
+                                    magna interdum eu. Curabitur pellentesque
+                                    nibh nibh, at maximus ante fermentum sit
+                                    amet. Pellentesque commodo lacus at sodales
+                                    sodales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="o-hotelSection" id="teAyudamos">
+                    <div class="m-infoSectionContent__header">
+                        <span class="a-infoHeader__subtitle">
+                            te ayudamos con el alojamiento
+                        </span>
+                        <h2 class="a-infoHeader__title">
+                            Hoteles y recomendaciones
+                        </h2>
+                    </div>
+                    <div class="m-infoSectionContent__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut et massa mi. Aliquam in hendrerit urna.
+                            Pellentesque sit amet sapien fringilla, mattis
+                            ligula consectetur, ultrices mauris. Maecenas vitae
+                            mattis tellus. Nullam quis imperdiet augue.
+                            Vestibulum auctor ornare leo. Non suscipit magna
+                            interdum eu. Curabitur pellentesque nibh nibh, at
+                            maximus ante fermentum sit amet. Pellentesque
+                            commodo lacus at sodales sodales.
+                        </p>
+                    </div>
+                </div>
+                <!-- Galería de Fotos -->
+                <div class="o-gallerySection">
+                    <div class="m-gallerySection__layout">
+                        <img class="js-lightbox-trigger" src="src/images/palacio.jpeg" alt="Photo 1">
+                        <img class="js-lightbox-trigger" src="src/images/palacio.jpeg" alt="Photo 2">
+                        <img class="js-lightbox-trigger" src="src/images/palacio.jpeg" alt="Photo 3">
+                        <img class="js-lightbox-trigger" src="src/images/palacio.jpeg" alt="Photo 4">
+                        <img class="js-lightbox-trigger" src="src/images/palacio.jpeg" alt="Photo 5">
+                        <img class="js-lightbox-trigger" src="src/images/palacio.jpeg" alt="Photo 6">
+                    </div>
+                </div>
+
+                <div id="lightbox">
+                    <span id="closeBtn" onclick="closeLightbox()">&times;</span>
+                    <img id="lightboxImg" src="" alt="Imagen ampliada">
+                </div>
+
+                <!-- Historia de Amor -->
+                <div class="o-loveStorySection" id="historiaAmor">
+                    <div class="m-loveStory__layout">
+                        <div class="m-loveStory__content">
+                            <div class="m-loveStoryContent__header">
+                                <h2 class="a-infoHeader__title">Nuestra Historia de Amor</h2>
+                            </div>
+                            <div class="m-loveStoryContent__text">
+                                <p>
+                                    Conocimos en [fecha] en [lugar]. Desde entonces, nuestra conexión ha crecido y hemos compartido tantos momentos especiales juntos. La propuesta de matrimonio fue un momento mágico en [lugar]. Estamos emocionados de celebrar nuestro amor con todos ustedes en nuestro día especial.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="m-loveStory__image">
+                            <img src="src/images/palacio.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="o-formSection" id="confirmarAsistencia">
+                    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfeQF59XCASL6gB4eI9jChQj5yzjyG7du4d6PFJ3pWYVBDKQw/viewform?embedded=true" scrolling="no" width="640" height="3000" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>                -->
+                </div>
+            
+                </div>
+        </main>
+
+        <footer class="o-mainFooter">
+            <span class="a-mainFooter__text">Diseñado by Juniors Masters</span>
+        </footer>
+    </body>
+</html>
